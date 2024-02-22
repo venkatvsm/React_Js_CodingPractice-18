@@ -1,0 +1,23 @@
+/* Write your code here. */
+.bg_container {
+  min-height: 100vh;
+  font-family: 'Roboto';
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emojiListContainer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+@media screen and (min-width: 768px) {
+  .emojiListContainer {
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+  }
+}

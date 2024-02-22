@@ -1,0 +1,33 @@
+/* Write your code here. */
+.Container {
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  padding: 0px;
+}
+.navBarContainer {
+  background-color: #ffffff33;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+}
+.emojiimageContainer {
+  display: flex;
+}
+.nav_heading {
+  font-size: 25px;
+}
+.nav_paraScore {
+  font-size: 18px;
+}
+.nav_paraTopScore {
+  font-size: 18px;
+}
+.navBarImage {
+  width: 50px;
+  padding-right: 10px;
+}
+.contentdisplay {
+  display: none;
+}
