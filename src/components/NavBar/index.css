@@ -10,7 +10,10 @@
   align-items: center;
   color: #ffffff;
   font-weight: bold;
-  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .emojiimageContainer {
   display: flex;
@@ -18,16 +21,42 @@
 .nav_heading {
   font-size: 25px;
 }
+.scoreContainer {
+  display: flex;
+}
 .nav_paraScore {
-  font-size: 18px;
+  font-size: 20px;
+  margin-right: 28px;
+  font-weight: 600;
 }
 .nav_paraTopScore {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .navBarImage {
   width: 50px;
   padding-right: 10px;
 }
-.contentdisplay {
-  display: none;
+@media screen and (min-width: 768px) {
+  .navBarContainer {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+  .emojiimageContainer {
+    width: 350px;
+  }
+  .navBarImage {
+    width: 30%;
+  }
+  .nav_heading {
+    font-size: 30px;
+    width: 100%;
+    align-self: center;
+  }
+  .nav_paraScore {
+    font-size: 26px;
+  }
+  .nav_paraTopScore {
+    font-size: 26px;
+  }
 }
