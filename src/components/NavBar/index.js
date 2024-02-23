@@ -3,7 +3,6 @@ import './index.css'
 
 const NavBar = props => {
   const {score, totalScore, winOrLoss} = props
-  const display = winOrLoss ? 'contentdisplay' : null
   return (
     <nav className="Container">
       <div className="navBarContainer">
@@ -15,8 +14,12 @@ const NavBar = props => {
           />
           <h1 className="nav_heading">Emoji Game</h1>
         </div>
-        <p className={`nav_paraScore ${display}`}>Score: {score}</p>
-        <p className={`nav_paraTopScore ${display}`}>Top Score: {totalScore}</p>
+        {!winOrLoss && (
+          <div className="scoreContainer">
+            <p className="nav_paraScore">Score: {score}</p>
+            <p className="nav_paraTopScore">Top Score: {totalScore}</p>
+          </div>
+        )}
       </div>
     </nav>
   )
